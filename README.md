@@ -19,6 +19,15 @@ A Spring Boot REST API for managing battery data, including names, postcodes, an
 - JUnit 5
 - Maven
 
+## Running the Application
+#### Make sure PostgreSQL is running and configured in application.yml.
+
+- ./mvnw spring-boot:run
+
+## Running Tests
+#### Tests use Testcontainers to spin up a temporary PostgreSQL database for integration testing, and the system will have Docker installed.
+- ./mvnw test
+
 ## API Endpoints
 
 ### `GET /api/batteries?minPostcode=2000&maxPostcode=3000`
